@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6{
 	margin: 0 auto;
 	text-align: center;
 	width: 250px;
-	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
 
 }
 
@@ -34,6 +34,8 @@ h1, h2, h3, h4, h5, h6{
 	font-family: Arial, sans-serif;
 	font-weight: normal;
 	margin-bottom: 0;
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
+
 }
 
 /* Start navigation */
@@ -46,9 +48,12 @@ label{
 	cursor: pointer;
 	display: inline-block;
 	padding: 5px;
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
+
 }
 
-.nav-menu:checked + label{
+.nav-menu:checked + 
+{
 	background-color: #3A3F43;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
