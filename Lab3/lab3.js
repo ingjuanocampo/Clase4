@@ -22,3 +22,21 @@ for(key in my_object){
 }
 
 
+
+// Funciones
+
+function test(){
+	console.log('ejecutando una funcion');
+}
+
+test();
+
+// usando funcion anonima
+
+var bye_bye = function(){
+	console.log('Que tengan una feliz semana santa');
+}
+
+bye_bye();
+
+
