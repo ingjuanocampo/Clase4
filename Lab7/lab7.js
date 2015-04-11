@@ -13,11 +13,16 @@ var vowels = ['a', 'e', 'i', 'o', 'u'];
 
 
 
+flag =false; 
+
 for(var i = 0; i < chars.length; i++){
 	for(var j = 0; j < vowels.length; j++){
 		if(chars[i] !== vowels[j]){// Etricta comparacion 
-				alert("Solo letras: " + chars[i]);
+			flag=true; 
 
 		}
 	}
+	if(flag)
+		alert("Solo letras: " + chars[i]);
+
 }
