@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS Age App</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-app>
+		<h1>Age getter</h1>
+		<p>Enter your Name: <input  type="number" ng-model="my_age" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/></p>
+		<p> Hello <span ng-bind="my_age"></span> !</p>
+	</div>
+	<script type="text/javascript"src="../assets/angular.min.js" ></script>
+</body>
+</html>

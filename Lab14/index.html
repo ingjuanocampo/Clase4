@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="reveal-app">
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div  ng-controller="controllerOne">
+		<div ng-show="revealDiv"> <! Aca se declaran las directivas ng-show  -->
+			hola mundo
+		</div>
+		<button ng-click="controllerButton()" ng-show="revealButton" >
+							Mostrar
+
+		</button>
+		<button ng-click="controllerButton2()" ng-show="revelanButton2">
+				Ocultar
+
+		</button>
+
+
+	</div>
+	<script type="text/javascript"src="../assets/angular.min.js"></script>
+	<script type="text/javascript">
+	angular.module('reveal-app', [])
+		   .controller('controllerOne', ['$scope', function($scope){
+		   		$scope.revealDiv = false; 
+		   		$scope.revealButton=true;
+		   		$scope.revelanButton2=true;  
+
+		   		$scope.controllerButton= function(){
+		   			$scope.revealDiv=true; 
+		   			$scope.revealButton=false; 
+		   			$scope.revelanButton2=true;  
+
+		   		}
+
+
+		   		$scope.controllerButton2= function(){
+		   			$scope.revealButton=true; 
+		   			$scope.revealDiv=true; 
+		   			$scope.revealDiv = false; 
+
+
+		   		}
+		   }]);
+	</script>
+</body>
+</html>
