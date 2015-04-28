@@ -1,3 +1,9 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border;
+}
+
 div{
 	padding: 5px; 
 }
@@ -25,6 +31,18 @@ input {
 	border-radius: 5px;
 }
 
+
+.logo{
+	background-color: #515558;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	margin: 0 auto;
+	text-align: center;
+	width: 250px;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
+
+}
+
 .button, a{
 	/*background: none;*/
 	background-color: blue;
@@ -36,6 +54,8 @@ input {
 	-o-border-radius: 5px;
 	-ms-border-radius: 5px;
 	border-radius: 5px;
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
+
 }
 
 .chkb { 
