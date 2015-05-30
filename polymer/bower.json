@@ -1,0 +1,25 @@
+{
+  "name": "apppolymer",
+  "version": "1",
+  "description": "tutorial",
+  "main": "main",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "keywords": [
+    "polymer",
+    "tutorial"
+  ],
+  "authors": [
+    "ing juan ocampo"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
